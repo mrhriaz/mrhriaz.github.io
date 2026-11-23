@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Md. Riaz Hossain - CSE Student, Researcher and Machine Learning Enthusiast">
+<title>Md. Riaz Hossain | Portfolio</title>
+
+<style>
+:root {
+  --bg: #080d18;
+  --card: #111a2b;
+  --text: #e8eef8;
+  --muted: #9baac0;
+  --blue: #54a8ff;
+  --border: #24334b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+a { color: var(--blue); text-decoration: none; }
+a:hover { color: white; }
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(8,13,24,.95);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 7%;
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 12px;
+}
+.logo { font-size: 20px; font-weight: bold; color: white; }
+nav { display: flex; flex-wrap: wrap; gap: 18px; }
+nav a { color: var(--muted); font-size: 14px; }
+nav a:hover { color: var(--blue); }
+.container { width: 86%; max-width: 1100px; margin: auto; }
+.hero {
+  min-height: 80vh; display: flex; align-items: center;
+  padding: 85px 0;
+}
+.eyebrow { color: var(--blue); letter-spacing: 3px; font-size: 13px; }
+h1 { font-size: clamp(38px, 7vw, 65px); line-height: 1.15; margin: 15px 0; }
+h1 span { color: var(--blue); }
+.hero p { max-width: 700px; color: var(--muted); font-size: 17px; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+.btn {
+  display: inline-block; padding: 11px 20px;
+  border-radius: 7px; border: 1px solid var(--blue);
+  color: white; font-weight: bold;
+}
+.btn.primary { background: var(--blue); color: #06101e; }
+section { padding: 65px 0; }
+.section-title { font-size: 30px; margin-bottom: 25px; }
+.section-title span { color: var(--blue); }
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 23px; height: 100%;
+}
+.card h3 { margin-bottom: 10px; color: white; }
+.card p, .muted { color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 18px; }
+.tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 15px; }
+.tag {
+  padding: 5px 11px; border-radius: 20px;
+  background: #172b45; color: #8fc7ff; font-size: 13px;
+}
+ul { padding-left: 20px; color: var(--muted); }
+li { margin: 7px 0; }
+.profile-links a {
+  display: inline-block; margin: 5px 7px 5px 0;
+  padding: 9px 14px; border: 1px solid var(--border);
+  border-radius: 7px; color: var(--text);
+}
+.profile-links a:hover { border-color: var(--blue); color: var(--blue); }
+footer {
+  border-top: 1px solid var(--border); text-align: center;
+  padding: 25px; color: var(--muted);
+}
+@media(max-width:600px) {
+  header { padding: 14px 5%; }
+  .container { width: 90%; }
+  nav { gap: 10px; }
+  nav a { font-size: 12px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">RIAZ<span style="color:#54a8ff">.</span></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#profiles">Profiles</a>
+  </nav>
+</header>
+
+<main>
+<div class="container">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">COMPUTER SCIENCE & ENGINEERING</div>
+      <h1>Md. Riaz<br><span>Hossain</span></h1>
+      <h3 style="color:#b8c9df">Researcher · ML Enthusiast · CSE Student</h3>
+      <p>
+        I am a Computer Science and Engineering student at
+        Dhaka International University, Bangladesh. My interests
+        include Machine Learning, Deep Learning, Computer Vision,
+        Medical Image Analysis, and Agricultural AI.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore Research</a>
+        <a class="btn" href="#profiles">Connect With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="card">
+      <p>
+        I am passionate about applying Artificial Intelligence and
+        Deep Learning to real-world problems. My work focuses on
+        developing intelligent computer vision systems for medical
+        image analysis and agricultural disease identification.
+        I am interested in research, experimentation, dataset
+        development, and building practical AI solutions.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+      <h3>Bachelor of Science in Computer Science and Engineering</h3>
+      <p>Dhaka International University (DIU), Bangladesh</p>
+      <p>2022 – 2026 (expected)</p>
+      <p class="muted">Research and software development interests.</p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2 class="section-title">Research <span>Publications</span></h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Enhancing Brain Tumor Diagnosis with Deep Convolutional Networks</h3>
+        <p>
+          A comprehensive comparison and Explainable AI insights
+          on multimodal data for brain tumor diagnosis.
+        </p>
+        <div class="tags">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Medical Imaging</span>
+          <span class="tag">Explainable AI</span>
+        </div>
+        <p style="margin-top:15px">ECCT 2026 · Accepted / Presented</p>
+      </article>
+
+      <article class="card">
+        <h3>A Deep Learning-Based Brain Tumor Segmentation and Area Quantification using Multimodal Images</h3>
+        <p>
+          Research on brain tumor segmentation and area
+          quantification using multimodal medical images.
+        </p>
+        <div class="tags">
+          <span class="tag">Segmentation</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Medical AI</span>
+        </div>
+        <p style="margin-top:15px">ECCT 2026 · Accepted / Presented</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Research <span>Projects</span></h2>
+    <div class="grid">
+      <article class="card">
+        <h3>GuavaLeaf-BD</h3>
+        <p>
+          A field-realistic, multi-view guava leaf disease dataset
+          and lightweight disease classification research project.
+        </p>
+        <div class="tags">
+          <span class="tag">Dataset Development</span>
+          <span class="tag">Agricultural AI</span>
+          <span class="tag">Computer Vision</span>
+        </div>
+        <p style="margin-top:15px">
+          <a href="https://doi.org/10.5281/zenodo.22660045"
+             target="_blank" rel="noopener">View Dataset on Zenodo →</a>
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Potato Leaf Disease Classification</h3>
+        <p>
+          Deep learning-based classification research using
+          multiple classes of potato leaf diseases.
+        </p>
+        <div class="tags">
+          <span class="tag">CNN</span>
+          <span class="tag">ResNet</span>
+          <span class="tag">Classification</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Corn Leaf Disease Classification</h3>
+        <p>
+          An AI course project exploring MobileNetV3 for
+          automated corn leaf disease classification.
+        </p>
+        <div class="tags">
+          <span class="tag">MobileNetV3</span>
+          <span class="tag">Transfer Learning</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Mango & Jackfruit Disease Research</h3>
+        <p>
+          Deep learning experiments using CNN architectures
+          for plant disease image classification.
+        </p>
+        <div class="tags">
+          <span class="tag">VGG16</span>
+          <span class="tag">ResNet50</span>
+          <span class="tag">Computer Vision</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="card">
+      <h3>Research Areas</h3>
+      <div class="tags">
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Medical Image Analysis</span>
+        <span class="tag">Agricultural AI</span>
+        <span class="tag">Explainable AI</span>
+      </div>
+      <h3 style="margin-top:22px">Tools & Technologies</h3>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">Google Colab</span>
+        <span class="tag">Kaggle</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">LaTeX</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles">
+    <h2 class="section-title">Academic & <span>Professional Profiles</span></h2>
+    <div class="card profile-links">
+      <a href="https://github.com/mrhriaz" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/md-riaz-hossain-10558440a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://www.kaggle.com/mdriaz103198" target="_blank" rel="noopener">Kaggle ↗</a>
+      <a href="https://www.hackerrank.com/profile/mdriaz103198" target="_blank" rel="noopener">HackerRank ↗</a>
+      <a href="https://orcid.org/0009-0002-6505-3384" target="_blank" rel="noopener">ORCID ↗</a>
+      <a href="https://doi.org/10.5281/zenodo.22660045" target="_blank" rel="noopener">Zenodo ↗</a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <p>© 2026 Md. Riaz Hossain. All rights reserved.</p>
+  <p>Built with HTML & CSS · Hosted with GitHub Pages</p>
+</footer>
+</body>
+</html>
